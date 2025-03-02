@@ -1,0 +1,57 @@
+from String_Flow.common.i18n.dictionary import preprocess_dictionary
+
+dictionary = {
+    "zh_CN": {
+        ("*", "Example Addon Side Bar Panel"): "示例插件面板",
+        ("*", "Example Functions"): "示例功能",
+        ("*", "ExampleAddon"): "示例插件",
+        ("*", ".srt file path"): ".srt文件路径",
+        ("*", "Int Config"): "整数参数",
+        ("*", "Character Flow"): "字符流",
+        ("*", "Character Flow"): "字符流",
+        ("*", "Style Editor"): "样式编辑器",
+        ("*", "Content Editor"): "内容编辑器",
+        ("*", "Sub Flow"): "字符流",
+        ("*", "Enabled"): "启用中",
+        ("*", "Disabled"): "未启用",
+        ("*", "CharFlow Controller"): "字符流控制器",
+        ("Operator", "Spawn Static Character Flow"): "生成静态字符流",
+        ("*", "Empty, please create a Character Flow instance first"): "空空如也，请先去右边的+按钮创建一个字符流实例",
+        ("*", "Please create a Character Flow instance first"): "请先去上面那个菜单创建一个字符流实例",
+        ("*", "Char Template:"): "字符模板",
+        ("*", "Char Anchor:"): "字符锚点",
+        ("*", "Text will continue to follow the anchor point after generation"): "文字将在生成后继续跟随锚点",
+        ("*", "use global extra time"): "是否使用全局额外时间",
+        ("*", "Global Extra Time"): "全局额外时间",
+        ("*", "use automatic line switching signal"): "是否使用自动换行信号",
+        ("*", "When the sum of the width of the characters in the current line exceeds this value, the line number will automatically +1"): "当前行的字符宽度之和超过这个值时，行数自动+1",
+        ("*", "Auto Arrange Text"): "自动排列文字",
+        ("*", "Auto Arrange Text (You can also manually control the text arrangement using the geometry node)"): "自动排列文字 (你也可以使用几何节点手动控制文字排列)",
+        ("*", "Column Gap Scale"): "列间距缩放系数",
+        ("*", "Row Gap Scale"): "行间距缩放系数",
+        ("*", "Please create a Character Flow instance first!"): "请先去上面那个菜单创建一个字符流实例！",
+        ("Operator", "Clear All Existing Texts"): "清除所有存在的文本",
+        ("Operator", "Sort Texts by Enter Time"): "根据进入时间对所有文本进行排序",
+        ("*", "Enter Time"): "进入时间",
+        ("*", "Exit Time"): "退出时间",
+        ("*", "Extra Time"): "额外时间",
+        ("*", "Import HTML Tags"): "导入HTML标签",
+        ("*", "Import Line Switch"): "导入换行信息",
+        ("*", "Import .srt File"): "导入.srt文件",
+        ("Operator", "Import Text From .srt File"): "从.srt文件导入文本",
+        ("*", "Some Char Template Examples"): "一些字符模板示例",
+        ("*", "How To Make Char Template"): "如何制作字符模板",
+        ("*", "Add-on Preferences View"): "插件设置面板",
+        ("*", ".srt file path"): ".srt文件路径",
+        ("*", "Time Offset Seconds"): "时间偏移秒数",
+        ("Operator", "ExampleOperator"): "示例操作",
+        ("*", "Tutorial"): "使用说明",
+        ("*", "Quick Start"): "快速开始",
+        ("*", "Panel Introduction"): "面板功能简介",
+        ("Operator", "Spawn Static Text For Selected Text"): "为选中的文本生成静态物体",
+    }
+}
+
+dictionary = preprocess_dictionary(dictionary)
+
+dictionary["zh_HANS"] = dictionary["zh_CN"]
