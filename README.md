@@ -2,7 +2,10 @@
 
 # Character Flow For Blender
 
-Character Flow is a powerful [Blender](https://www.blender.org/) addon that provides a comprehensive solution for procedural character/text animation, developed based on this excellent [BlenderAddonPackageTool](https://github.com/xzhuah/BlenderAddonPackageTool) framework.
+Character Flow is a powerful [Blender](https://www.blender.org/) addon that provides a comprehensive solution for procedural character/text animation, developed based on this excellent [BlenderAddonPackageTool](https://github.com/xzhuah/BlenderAddonPackageTool) framework. Click [here](https://github.com/3c0tr/CharacterFlow/releases/tag/preview) to download the latest version
+
+![preview](./gifs/mi2.gif)
+![preview](./gifs/gen.gif)
 
 ## Main Features - every character is an independent object!
 - **Visual Timeline Editing**
