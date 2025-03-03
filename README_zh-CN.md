@@ -23,7 +23,7 @@
   - 允许你通过 HTML 标签为字符附加任何自定义属性
   - 所有属性均可被几何节点/着色器节点作为输入
 
-![preview](./gifs/mi2.gif)
+![preview](./gifs/mi3.gif)
 ![preview](./gifs/gen.gif)
 
 ## 使用教程
