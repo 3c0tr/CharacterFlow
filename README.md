@@ -23,8 +23,9 @@ Character Flow is a powerful [Blender](https://www.blender.org/) addon that prov
   - Allow adding any custom properties to characters via HTML tags
   - All properties can be used as inputs for geometry nodes/shader nodes
 
-![preview](./gifs/mi2.gif)
-![preview](./gifs/gen.gif)
+<p align="center">
+  <img src="./gifs/mi2.gif" alt="preview">
+</p>
 
 ## Usage Tutorial
 
