@@ -4,7 +4,7 @@
 
 字符流是一个功能强大的 [Blender](https://www.blender.org/) 插件，为程序化字符/文本动画提供全面的解决方案，基于[BlenderAddonPackageTool](https://github.com/xzhuah/BlenderAddonPackageTool)这个出色的框架开发。
 
-## 主要特性
+## 主要特性 - 每一个字符都是独立的物体！
 - **可视化时间轴编辑**
   - 内置文本编辑器支持无限量文本内容编辑
   - 可为每条语句独立设置动画开始时间与结束时间
