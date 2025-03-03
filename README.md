@@ -33,6 +33,8 @@ Character Flow is a powerful Blender addon that provides a comprehensive solutio
 - **Node System and Character Templates**  
   As standard `Blender objects`, character templates have all Blender object properties, meaning you can add geometry nodes and shader nodes to them, unlocking unlimited possibilities for procedural creation! Combined with the property data interface of the Character Flow addon, you can achieve stunning procedural text animation effects.
 
+**The addon comes with 7 character templates as examples, which you can use directly or refer to them to create your own character templates.**
+
 - **Quick Start Guide**
   1. After installing the addon, find the `Character Flow` tab in the right panel of the `3D View`
   2. Open the `Character Flow` panel, click the `+` button in the top `Character Flow Controller` to create a new Character Flow instance
@@ -69,9 +71,9 @@ Character Flow is a powerful Blender addon that provides a comprehensive solutio
 
 - **Creating Animations with Geometry Nodes**
 
-  You can add geometry nodes to the text template and its child objects to create animation effects.
+  You can add geometry nodes to the text template and its child objects to create animation effects. When the plugin generates character objects, it will look for geometry nodes attached to the text template and modify the data in input interfaces with specified names to match the values from the additional property data interfaces with the same names.
 
-  To access the additional data interfaces provided by this addon (see [Property Data Interface] above), follow these steps:
+  For API interface details, refer to the [Property Data Interface] above. To access these in geometry nodes, follow these steps:
 
   1. Enter the geometry node editor, find the [Group] panel on the right (if not visible, click the dropdown menu)
   2. In the [Group] panel, find the [Data Interface] panel, click (New Item) to add a new input interface
@@ -79,9 +81,9 @@ Character Flow is a powerful Blender addon that provides a comprehensive solutio
 
 - **Creating Animations with Shader Nodes**
 
-  You can add shader nodes to the text template and its child objects to create animation effects.
+  You can add shader nodes to the text template and its child objects to create animation effects. When the plugin generates character objects, it will attach all additional property data as custom attributes to the character objects.
 
-  To access the additional data interfaces provided by this addon (see [Property Data Interface] above), follow these steps:
+  For API interface details, refer to the [Property Data Interface] above. To access these in shader nodes, follow these steps:
 
   1. Enter the shader node editor, create a new attribute node (Add->Input->Attribute)
   2. Change the name in the attribute node to the property name you want to access, change the type to [Float], such as "enter", "idx", etc...

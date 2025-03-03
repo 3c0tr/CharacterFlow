@@ -14,10 +14,13 @@ dictionary = {
         ("*", "Sub Flow"): "字符流",
         ("*", "Enabled"): "启用中",
         ("*", "Disabled"): "未启用",
-        ("*", "CharFlow Controller"): "字符流控制器",
+        ("*", "Character Flow Controller"): "字符流控制器",
         ("Operator", "Spawn Static Character Flow"): "生成静态字符流",
         ("*", "Empty, please create a Character Flow instance first"): "空空如也，请先去右边的+按钮创建一个字符流实例",
         ("*", "Please create a Character Flow instance first"): "请先去上面那个菜单创建一个字符流实例",
+        ("*", "About Dynamic Preview and Static Objects"): "关于动态预览与静态对象的说明",
+        ("*", "Dynamic Preview is only available in View Mode, it is recommended to convert the character flow to static objects before rendering"): "动态预览功能仅供视图模式中使用，推荐将字符流转化为静态对象再渲染",
+        ("*", "If you want to use dynamic preview in rendering, please enable [Render]->[Lock Interface]"): "如果一定要在渲染时启用动态字符流功能，请将[渲染]->[锁定界面]开启",
         ("*", "Char Template:"): "字符模板",
         ("*", "Char Anchor:"): "字符锚点",
         ("*", "Text will continue to follow the anchor point after generation"): "文字将在生成后继续跟随锚点",
@@ -48,6 +51,8 @@ dictionary = {
         ("*", "Tutorial"): "使用说明",
         ("*", "Quick Start"): "快速开始",
         ("*", "Panel Introduction"): "面板功能简介",
+        ("*", "Extra Property Interface"): "额外数据接口",
+        ("*", "Advanced Interface"): "进阶接口",
         ("Operator", "Spawn Static Text For Selected Text"): "为选中的文本生成静态物体",
     }
 }
