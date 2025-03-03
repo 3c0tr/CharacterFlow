@@ -1,8 +1,8 @@
 [English](./README.md) | [简体中文](./README_zh-CN.md)
 
-# Character Flow
+# Character Flow For Blender
 
-Character Flow is a powerful Blender addon that provides a comprehensive solution for procedural text animation, developed based on the excellent [BlenderAddonPackageTool](https://github.com/xzhuah/BlenderAddonPackageTool) framework.
+Character Flow is a powerful Blender addon that provides a comprehensive solution for procedural text animation, developed based on this excellent [BlenderAddonPackageTool](https://github.com/xzhuah/BlenderAddonPackageTool) framework.
 
 ## Main Features
 - **Visual Timeline Editing**

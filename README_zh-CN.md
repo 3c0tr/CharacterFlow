@@ -1,6 +1,6 @@
 [English](./README.md) | [简体中文](./README_zh-CN.md)
 
-# Character Flow 字符流
+# Character Flow Blender字符流插件
 
 字符流是一个功能强大的 Blender 插件，为程序化文本动画提供全面的解决方案，基于[BlenderAddonPackageTool](https://github.com/xzhuah/BlenderAddonPackageTool)这个出色的框架开发。
 
