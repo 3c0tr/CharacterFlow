@@ -9,7 +9,7 @@ from ....common.types.framework import reg_order
 class BasePanel(object):
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "Sub Flow"
+    bl_category = "Character Flow"
 
     @classmethod
     def poll(cls, context: bpy.types.Context):
@@ -624,6 +624,20 @@ class InstanceExample(BasePanel, bpy.types.Panel):
             row.label(text="字符会一个接一个地出现")
             row.operator(LoadPresetOperator.bl_idname, text="点击获取打字机例程").preset_name = "TypeWriter"
 
+            row = layout.row()
+            left_col = row.column()
+            left_col.scale_x = 0.15  # 设置固定宽度（以UI单位为单位）
+            left_col.label(text="")
+            box = row.box()
+            box.label(text="渐变现身", icon='MESH_CUBE')
+            box2 = box.box()
+            col = box2.column()
+            # col.label(text="a simple typewriter effect, character will appear one by one")
+            row = col.row()
+            row = row.split(factor=0.6)
+            row.label(text="字符会慢慢从透明开始出现")
+            row.operator(LoadPresetOperator.bl_idname, text="点击获取渐变现身例程").preset_name = "FadeIn"
+
             layout.separator()
             row = layout.row()
             left_col = row.column()
@@ -750,6 +764,20 @@ class InstanceExample(BasePanel, bpy.types.Panel):
             row = row.split(factor=0.6)
             row.label(text="Characters will appear one by one")
             row.operator(LoadPresetOperator.bl_idname, text="Click get Typewriter preset").preset_name = "TypeWriter"
+
+            row = layout.row()
+            left_col = row.column()
+            left_col.scale_x = 0.15  # 设置固定宽度（以UI单位为单位）
+            left_col.label(text="")
+            box = row.box()
+            box.label(text="FadeIn", icon='MESH_CUBE')
+            box2 = box.box()
+            col = box2.column()
+            # col.label(text="a simple typewriter effect, character will appear one by one")
+            row = col.row()
+            row = row.split(factor=0.6)
+            row.label(text="Characters will slowly appear from transparent")
+            row.operator(LoadPresetOperator.bl_idname, text="Click get FadeIn preset").preset_name = "FadeIn"
 
             layout.separator()
             row = layout.row()

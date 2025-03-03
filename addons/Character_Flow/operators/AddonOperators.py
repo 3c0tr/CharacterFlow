@@ -200,7 +200,7 @@ class AddtextfragOperator(bpy.types.Operator):
     hints: list[str] = [
         "what a day",
         "potato is amazing",
-        "revive me",
+        "revive me machine",
         "victory is yours! i submit!",
         "pineapple juice"
     ]
@@ -214,7 +214,7 @@ class AddtextfragOperator(bpy.types.Operator):
         # hint_count = context.scene.hint_count
         textfrag = current_flow.text_list.add()
         # textfrag.name = f"textfrag_{random.randint(0, 9999999999)}"
-        roll = random.randint(0, 20)
+        roll = random.randint(0, 30)
         if roll != 7:
 
             textfrag.text = "new String text"

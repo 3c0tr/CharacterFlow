@@ -15,11 +15,10 @@ bl_info = {
     "name": "Character Flow",
     "author": "ycutr",
     "blender": (4, 3, 2),
-    "version": (0, 0, 1),
-    "description": "Dynamic Character Generator",
+    "version": (0, 1, 0),
+    "description": "Procedure Character&Text Animation Tool",
     "warning": "",
-    "doc_url": "https://github.com/ycutr/String_Flow",
-    # "tracker_url": "https://github.com/ycutr/String_Flow",
+    "doc_url": "https://github.com/3c0tr/CharacterFlow",
     "support": "COMMUNITY",
     "category": "Animation"
 }

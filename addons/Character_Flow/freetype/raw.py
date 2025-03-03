@@ -30,7 +30,7 @@ else:
     library_name = 'libfreetype.so'
 
 filename = os.path.join(os.path.dirname(freetype.__file__), library_name)
-filename = "D:\\data\\libfreetype.dll"
+# filename = "D:\\data\\libfreetype.dll"
 
 # If no bundled shared object is found, look for a system-wide installed one.
 if not os.path.exists(filename):

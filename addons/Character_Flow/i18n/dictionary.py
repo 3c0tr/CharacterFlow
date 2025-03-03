@@ -1,4 +1,4 @@
-from String_Flow.common.i18n.dictionary import preprocess_dictionary
+from Character_Flow.common.i18n.dictionary import preprocess_dictionary
 
 dictionary = {
     "zh_CN": {
