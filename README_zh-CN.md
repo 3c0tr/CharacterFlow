@@ -2,7 +2,7 @@
 
 # Character Flow Blender字符流插件
 
-字符流是一个功能强大的 Blender 插件，为程序化文本动画提供全面的解决方案，基于[BlenderAddonPackageTool](https://github.com/xzhuah/BlenderAddonPackageTool)这个出色的框架开发。
+字符流是一个功能强大的 [Blender](https://www.blender.org/) 插件，为程序化字符/文本动画提供全面的解决方案，基于[BlenderAddonPackageTool](https://github.com/xzhuah/BlenderAddonPackageTool)这个出色的框架开发。
 
 ## 主要特性
 - **可视化时间轴编辑**

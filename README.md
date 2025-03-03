@@ -2,7 +2,7 @@
 
 # Character Flow For Blender
 
-Character Flow is a powerful Blender addon that provides a comprehensive solution for procedural text animation, developed based on this excellent [BlenderAddonPackageTool](https://github.com/xzhuah/BlenderAddonPackageTool) framework.
+Character Flow is a powerful [Blender](https://www.blender.org/) addon that provides a comprehensive solution for procedural character/text animation, developed based on this excellent [BlenderAddonPackageTool](https://github.com/xzhuah/BlenderAddonPackageTool) framework.
 
 ## Main Features
 - **Visual Timeline Editing**
@@ -71,7 +71,7 @@ Character Flow is a powerful Blender addon that provides a comprehensive solutio
 
 - **Creating Animations with Geometry Nodes**
 
-  You can add geometry nodes to the text template and its child objects to create animation effects. When the plugin generates character objects, it will look for geometry nodes attached to the text template and modify the data in input interfaces with specified names to match the values from the additional property data interfaces with the same names.
+  You can add geometry nodes to the character template and its child objects to create animation effects. When the plugin generates character objects, it will look for geometry nodes attached to the character template and modify the data in input interfaces with specified names to match the values from the additional property data interfaces with the same names.
 
   For API interface details, refer to the [Property Data Interface] above. To access these in geometry nodes, follow these steps:
 
@@ -81,7 +81,7 @@ Character Flow is a powerful Blender addon that provides a comprehensive solutio
 
 - **Creating Animations with Shader Nodes**
 
-  You can add shader nodes to the text template and its child objects to create animation effects. When the plugin generates character objects, it will attach all additional property data as custom attributes to the character objects.
+  You can add shader nodes to the character template and its child objects to create animation effects. When the plugin generates character objects, it will attach all additional property data as custom attributes to the character objects.
 
   For API interface details, refer to the [Property Data Interface] above. To access these in shader nodes, follow these steps:
 

@@ -906,7 +906,7 @@ class CustomStyle(BasePanel, bpy.types.Panel):
             box = row.box()
             box.label(text="使用几何节点制作动画", icon='GEOMETRY_NODES')
             box.label(text="你可以把几何节点添加到文字模板上，以及文字模板上的子物体上，来制作动画效果")
-            box.label(text="本插件提供的额外数据接口，接口详情请参考下方的[额外数据接口]，要想在几何节点中获取它们，请参考以下的操作流程")
+            box.label(text="本插件提供的属性数据接口，接口详情请参考下方的[属性数据接口]，要想在几何节点中获取它们，请参考以下的操作流程")
             box.label(icon="EVENT_NDOF_BUTTON_1",text="进入几何节点编辑器，找到右侧的[群组]面板(如果你找不到，可以试着按下N键)")
             box.label(icon="EVENT_NDOF_BUTTON_2",text="在[群组]面板中，找到[数组接口]面板，点击[新建条目]添加一个新的输入接口")
             box.label(icon="EVENT_NDOF_BUTTON_3",text="将刚刚创建的接口的名称修改为你打算获取的属性名称，比如“enter”,“idx”等...")
@@ -919,7 +919,7 @@ class CustomStyle(BasePanel, bpy.types.Panel):
             box = row.box()
             box.label(text="使用着色器节点制作动画", icon='NODE_MATERIAL')
             box.label(text="你可以把着色器节点添加到文字模板上，以及文字模板上的子物体上，来制作动画效果")
-            box.label(text="本插件提供的额外数据接口，接口详情请参考下方的[额外数据接口]，要想在着色器节点中获取它们，请参考以下的操作流程")
+            box.label(text="本插件提供的属性数据接口，接口详情请参考下方的[属性数据接口]，要想在着色器节点中获取它们，请参考以下的操作流程")
             box.label(icon="EVENT_NDOF_BUTTON_1",text="进入着色器节点编辑器，创建一个新的属性节点(添加->输入->属性)")
             box.label(icon="EVENT_NDOF_BUTTON_2",text="将属性节点中的名称修改为你打算获取的属性名称，比如“enter”,“idx”等...类型修改为[物体]")
         else:
@@ -971,7 +971,7 @@ class CustomStyle(BasePanel, bpy.types.Panel):
 
 @reg_order(4)
 class ExtraDataInterface(BasePanel, bpy.types.Panel):
-    bl_label = "Extra Property Interface"
+    bl_label = "Property Data Interface"
     bl_idname = "SCENE_PT_extra_data_interface"
     bl_parent_id = "SCENE_PT_tutorial"
     bl_options = {'DEFAULT_CLOSED'}
@@ -1155,7 +1155,7 @@ class AdvanceInterface(BasePanel, bpy.types.Panel):
             left_col.scale_x = 0.15  # 设置固定宽度（以UI单位为单位）
             left_col.label(text="")
             box = row.box()
-            box.label(text="在文本段落中HTML标签的属性也会被添加到字符物体上，使用方式与[额外数据接口]相同", icon='CON_TRANSFORM_CACHE')
+            box.label(text="在文本段落中HTML标签的属性也会被添加到字符物体上，使用方式与[属性数据接口]相同", icon='CON_TRANSFORM_CACHE')
             col = box.column()
 
             box2 = col.box()

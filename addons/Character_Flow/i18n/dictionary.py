@@ -51,7 +51,7 @@ dictionary = {
         ("*", "Tutorial"): "使用说明",
         ("*", "Quick Start"): "快速开始",
         ("*", "Panel Introduction"): "面板功能简介",
-        ("*", "Extra Property Interface"): "额外数据接口",
+        ("*", "Property Data Interface"): "属性数据接口",
         ("*", "Advanced Interface"): "进阶接口",
         ("Operator", "Spawn Static Text For Selected Text"): "为选中的文本生成静态物体",
     }
