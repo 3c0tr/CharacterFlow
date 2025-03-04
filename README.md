@@ -33,6 +33,10 @@ Character Flow is a powerful [Blender](https://www.blender.org/) addon that prov
   <img src="./gifs/kick2.gif" alt="preview">
 </p>
 
+<p align="center">
+  <img src="./gifs/operate.gif" alt="preview">
+</p>
+
 
 ## Usage Tutorial
 

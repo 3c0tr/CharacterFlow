@@ -33,6 +33,10 @@
   <img src="./gifs/kick2.gif" alt="preview">
 </p>
 
+<p align="center">
+  <img src="./gifs/operate.gif" alt="preview">
+</p>
+
 
 ## 使用教程
 
