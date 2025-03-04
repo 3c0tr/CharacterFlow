@@ -27,6 +27,11 @@ Character Flow is a powerful [Blender](https://www.blender.org/) addon that prov
   <img src="./gifs/mi2.gif" alt="preview">
 </p>
 
+<p align="center">
+  <img src="./gifs/kick2.gif" alt="preview">
+</p>
+
+
 ## Usage Tutorial
 
 **Before using the Character Flow addon, please understand the core concept of character templates.**
@@ -124,5 +129,50 @@ Character Flow is a powerful [Blender](https://www.blender.org/) addon that prov
   ```
 ## Other Information
   Character Flow is an addon still under development, and there may still be many issues. Some features may be adjusted. Suggestions and bug reports are welcome, contact me: **mc0tr256@163.com**
+
+# MKV 转 GIF 高质量转换工具
+
+这是一个使用 FFmpeg 将 MKV 视频文件转换为高质量 GIF 的批处理工具。
+
+## 前提条件
+
+- 安装 [FFmpeg](https://ffmpeg.org/download.html) 并将其添加到系统环境变量中
+- Windows 操作系统
+
+## 使用方法
+
+```
+mkv_to_gif.bat [输入文件.mkv] [输出文件.gif] [可选:帧率] [可选:宽度]
+```
+
+### 参数说明
+
+- `输入文件.mkv`: 要转换的 MKV 文件路径
+- `输出文件.gif`: 输出的 GIF 文件路径
+- `帧率`: 可选参数，GIF 的帧率，默认为 15
+- `宽度`: 可选参数，GIF 的宽度，默认为 640（高度会按比例自动计算）
+
+### 示例
+
+```
+mkv_to_gif.bat video.mkv output.gif 10 800
+```
+
+这将把 video.mkv 转换为帧率为 10fps、宽度为 800 像素的 GIF 文件。
+
+## 关于"无损"转换
+
+需要注意的是，GIF 格式本身是有损的，最多支持 256 色。因此，从 MKV 转换到 GIF 时不可能完全无损。
+
+本工具使用了以下技术来尽量保持高质量：
+
+1. 使用 `lanczos` 缩放算法（高质量缩放）
+2. 生成优化的调色板（最多 256 色）
+3. 使用 `sierra2_4a` 抖动算法减少色带
+4. 使用 `rectangle` 差异模式优化帧间变化
+
+## 高级用法
+
+如果需要更高级的转换选项，可以直接修改批处理文件中的 FFmpeg 命令行参数。
 
 

@@ -27,6 +27,11 @@
   <img src="./gifs/mi3.gif" alt="preview">
 </p>
 
+<p align="center">
+  <img src="./gifs/kick2.gif" alt="preview">
+</p>
+
+
 ## 使用教程
 
 **在使用字符流插件前，请先了解字符模板的核心概念。**
