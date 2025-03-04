@@ -101,7 +101,7 @@ Character Flow is a powerful [Blender](https://www.blender.org/) addon that prov
   For API interface details, refer to the [Property Data Interface] above. To access these in shader nodes, follow these steps:
 
   1. Enter the shader node editor, create a new attribute node (Add->Input->Attribute)
-  2. Change the name in the attribute node to the property name you want to access, change the type to [Float], such as "enter", "idx", etc...
+  2. Change the name in the attribute node to the property name you want to access, change the type to [Object], such as "enter", "idx", etc...
 
 - **Adding Custom Properties via HTML Tags**
 
