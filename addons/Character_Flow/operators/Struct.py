@@ -65,7 +65,7 @@ class CharObject:
 class StringFlow(bpy.types.PropertyGroup):
     text_list: bpy.props.CollectionProperty(type=textfrag)
     textfrag_index: bpy.props.IntProperty(name="textfrag_index")
-    is_enabled: bpy.props.BoolProperty(name="is_enabled", default=True)
+    is_enabled: bpy.props.BoolProperty(name="is_enabled", default=False)
     anchor: bpy.props.PointerProperty(name="anchor",type=bpy.types.Object)
     is_follow_anchor: bpy.props.BoolProperty(name="is_follow_anchor", default=True)
     metrics_font: bpy.props.PointerProperty(

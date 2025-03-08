@@ -418,8 +418,8 @@ class FirstUse(BasePanel, bpy.types.Panel):
             box2.label(text="3.你需要为你的字符流添加文本段落。点击[内容编辑器]面板的+按钮来添加你想要的文本段落。")
             box.separator()
             box2 = box.box()
-            box2.label(icon= "WARNING_LARGE", text="[在你完成了这一切之后，你可以试着拖动时间轴，查看实时生成的文字效果。]")
             box2.label(text = "对效果满意之后，可以点击[字符流控制器]面板的[生成静态物体]按钮来生成静态物体。")
+            box2.label(icon= "WARNING_LARGE", text="[在你完成了这一切之后，你可以试着拖动时间轴，查看实时生成的文字效果。]")
         else:
             layout = self.layout
 
@@ -446,8 +446,8 @@ class FirstUse(BasePanel, bpy.types.Panel):
             box2.label(text="3. Add text: Click + in [Content Editor] to add text")
             box.separator()
             box2 = box.box()
-            box2.label(icon="WARNING_LARGE", text="[Now try timeline scrubbing to see text effects]")
             box2.label(text = "then, click the [Character Flow Controller] panel's [Generate Static Object] to generate static object.")
+            box2.label(icon="WARNING_LARGE", text="[Now try timeline scrubbing to see text effects]")
 
 @reg_order(1)
 class FunctionIntroduction(BasePanel, bpy.types.Panel):
@@ -742,7 +742,7 @@ class InstanceExample(BasePanel, bpy.types.Panel):
             # row = col.row()
             # row.label(text="You can use this test custom HTML property")
             row = col.row()
-            row.label(text="试试这个：\"my mind is racing with <shake><col = #FF2F2F>endless fears</col></shake>\"")
+            row.label(text="试试这个：\"my mind is racing with <shake><color = #FF2F2F>endless fears</color></shake>\"")
             row = col.row()
             row = row.split(factor=0.6)
             row.label(text="你可以使用这个测试自定义的HTML属性")
@@ -883,7 +883,7 @@ class InstanceExample(BasePanel, bpy.types.Panel):
             # row = col.row()
             # row.label(text="You can use this test custom HTML property")
             row = col.row()
-            row.label(text="Try this: \"my mind is racing with <shake><col = #FF2F2F>endless fears</col></shake>\"")
+            row.label(text="Try this: \"my mind is racing with <shake><color = #FF2F2F>endless fears</color></shake>\"")
             row = col.row()
             row = row.split(factor=0.6)
             row.label(text="You can use this test custom HTML property")
@@ -1310,7 +1310,7 @@ class AdvanceInterface(BasePanel, bpy.types.Panel):
             row = row.split(factor=0.6)
             row.label(text="You can use this example and the text below to try this feature")
             row.operator(LoadPresetOperator.bl_idname, text="Click to get HTML tag test example").preset_name = "HTML_Example"
-            box2.label(text="my mind is racing with <shake><col = #FF0000>endless fears</col></shake>")
+            box2.label(text="my mind is racing with <shake><color = #FF0000>endless fears</color></shake>")
 
             layout.separator()
 

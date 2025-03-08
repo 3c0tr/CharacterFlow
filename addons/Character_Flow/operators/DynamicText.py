@@ -25,16 +25,16 @@ class DynamicText:
         self.char_objects = []
         self.parent_objects = []
 
-    def GenerateSingleStaticText(self):
-        self.char_objects.clear()
-        print("GenerateStaticText")
-        index = bpy.context.scene.CharacterFlow_index
-        flow = bpy.context.scene.CharacterFlow_list[index]
-        textfrag = flow.text_list[flow.textfrag_index]
-        self.generate_String(flow, StringText(textfrag.text, 0, 0, 0), None)
+    # def GenerateSingleStaticText(self):
+    #     self.char_objects.clear()
+    #     print("GenerateStaticText")
+    #     index = bpy.context.scene.CharacterFlow_index
+    #     flow = bpy.context.scene.CharacterFlow_list[index]
+    #     textfrag = flow.text_list[flow.textfrag_index]
+    #     self.generate_String(flow, StringText(textfrag.text, 0, 0, 0), None)
 
-        for staticTextObject in self.char_objects:
-            self.update_static_text_object(staticTextObject)
+    #     for staticTextObject in self.char_objects:
+    #         self.update_static_text_object(staticTextObject)
         
     def GenerateAllStaticText(self, single_text : bool = False):
         self.char_objects.clear()
@@ -72,7 +72,7 @@ class DynamicText:
 
         if single_text:
             textfrag = flow.text_list[flow.textfrag_index]
-            self.generate_String(flow, StringText(textfrag.text, 0, 0, 0), collection, 0)
+            self.generate_String(flow, StringText(textfrag.text, textfrag.enter_time, textfrag.exit_time, extra_time), collection, 0)
         else:
             for i ,textfrag in enumerate(flow.text_list):
                 print(f"textfrag {i} : {textfrag.text}")
@@ -666,13 +666,6 @@ class DynamicText:
 
             col += 1
 
-            # 如果i是最后一个字符，则添加col
-            if i == len(text) - 1:
-                line_width.append(run)
-                Max_col.append(col)
-
-            _run = run
-
             # 使用实际字符宽度设置位置
             if flow.Auto_Arrange:
                 char_object.location.x = run
@@ -686,6 +679,13 @@ class DynamicText:
                 if custom_properties[i].get("_Size"):
                     size_scale_num = custom_properties[i]["_Size"]
                 run += metrics['advance'] * size_scale_num
+
+            # 如果i是最后一个字符，则添加col
+            if i == len(text) - 1:
+                line_width.append(run)
+                Max_col.append(col)
+
+            _run = run
 
 
             # 设置父物体

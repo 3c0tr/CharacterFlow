@@ -410,7 +410,7 @@ class LoadPresetOperator(bpy.types.Operator):
         return True
     
     def execute(self, context):
-        preset_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), "presets", "styles40.blend")
+        preset_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), "presets", "styles401.blend")
         print(f"尝试加载预设文件: {preset_file}")  # 添加这行来打印路径
         
         if not os.path.exists(preset_file):

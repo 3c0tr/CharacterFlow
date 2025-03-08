@@ -15,7 +15,7 @@ bl_info = {
     "name": "Character Flow",
     "author": "ycutr",
     "blender": (4, 3, 2),
-    "version": (0, 1, 0),
+    "version": (0, 1, 1),
     "description": "Procedure Character&Text Animation Tool",
     "warning": "",
     "doc_url": "https://github.com/3c0tr/CharacterFlow",

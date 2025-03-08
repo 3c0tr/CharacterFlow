@@ -123,8 +123,8 @@
   插件提供了一些预设的HTML标签，用于一些难以触及的操作：
   
   ```
-  <Font = "Arial Black">hello world</Font>    | 这个标签会自动将字符的字体设置为"Arial Black"
-  <Size = 1.33>hello world</Size>             | 这个标签会自动将字符的大小放大原来的1.33倍
+  <_Font = "Arial Black">hello world</_Font>    | 这个标签会自动将字符的字体设置为"Arial Black"
+  <_Size = 1.33>hello world</_Size>             | 这个标签会自动将字符的大小放大原来的1.33倍
   ```
 
 - **文本换行**
