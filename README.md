@@ -122,8 +122,8 @@ Character Flow is a powerful [Blender](https://www.blender.org/) addon that prov
   The addon provides some preset HTML tags for operations that are difficult to access:
   
   ```
-  <Font = "Arial Black">hello world</Font>    | This tag automatically sets the character's font to "Arial Black"
-  <Size = 1.33>hello world</Size>             | This tag automatically enlarges the character's size by 1.33 times
+  <_Font = "Arial Black">hello world</Font>    | This tag automatically sets the character's font to "Arial Black"
+  <_Size = 1.33>hello world</Size>             | This tag automatically enlarges the character's size by 1.33 times
   ```
 
 - **Text Line Breaks**
